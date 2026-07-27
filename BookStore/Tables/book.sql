@@ -1,6 +1,4 @@
-﻿
-
-CREATE TABLE [dbo].[book]
+﻿CREATE TABLE [dbo].[book]
 (
 	[book_id] INT CONSTRAINT PK_BOOK PRIMARY KEY,
 	[title] varchar(50) Not Null ,
