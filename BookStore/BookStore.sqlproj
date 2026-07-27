@@ -62,5 +62,7 @@
     <Build Include="Tables\book.sql" />
     <Build Include="Tables\book_language.sql" />
     <Build Include="Tables\publisher.sql" />
+    <Build Include="Tables\author.sql" />
+    <Build Include="Tables\book_author.sql" />
   </ItemGroup>
 </Project>
