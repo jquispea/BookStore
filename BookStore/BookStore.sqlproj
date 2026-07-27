@@ -57,6 +57,7 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="Tables" />
+    <Folder Include="schema" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\book.sql" />
