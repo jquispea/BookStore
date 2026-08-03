@@ -58,6 +58,7 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="schema" />
+    <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\book.sql" />
@@ -75,5 +76,22 @@
     <Build Include="Tables\address.sql" />
     <Build Include="Tables\address_status.sql" />
     <Build Include="Tables\customer_address.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\address.data.sql" />
+    <None Include="Scripts\address_status.data.sql" />
+    <None Include="Scripts\author.data.sql" />
+    <None Include="Scripts\book.data.sql" />
+    <None Include="Scripts\book_author.data.sql" />
+    <None Include="Scripts\book_language.data.sql" />
+    <None Include="Scripts\country.data.sql" />
+    <None Include="Scripts\cust_order.data.sql" />
+    <None Include="Scripts\customer.data.sql" />
+    <None Include="Scripts\customer_address.data.sql" />
+    <None Include="Scripts\order_history.data.sql" />
+    <None Include="Scripts\order_line.data.sql" />
+    <None Include="Scripts\order_status.data.sql" />
+    <None Include="Scripts\publisher.data.sql" />
+    <None Include="Scripts\shipping_method.data.sql" />
   </ItemGroup>
 </Project>
