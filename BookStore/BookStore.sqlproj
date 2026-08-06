@@ -77,5 +77,10 @@
     <Build Include="Tables\shipping_method.sql" />
     <Build Include="Tables\book_language.sql" />
     <Build Include="Tables\publisher.sql" />
+    <Build Include="Stored Procedures\GetAddressChangesByRowVersion.sql" />
+    <Build Include="Stored Procedures\GetBookChangesByRowVersion.sql" />
+    <Build Include="Stored Procedures\GetCustomerChangesByRowVersion.sql" />
+    <Build Include="Stored Procedures\GetDatabaseRowVersion.sql" />
+    <Build Include="Stored Procedures\GetShippingMethodChangesByRowVersion.sql" />
   </ItemGroup>
 </Project>
