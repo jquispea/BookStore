@@ -1,4 +1,4 @@
-﻿CREATE TABLE dbo.StgBook
+﻿CREATE TABLE staging.StgBook
 (
     BookID INT,
     Title VARCHAR(400),

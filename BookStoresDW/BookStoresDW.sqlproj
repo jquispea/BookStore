@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>BookStore</Name>
+    <Name>BookStoresDW</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{94ca4146-5ab1-4273-b7a6-4a5b6a3f7dc7}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql170DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{636f2c91-57ba-4dcc-9dcc-982f6744b310}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>BookStore</RootNamespace>
-    <AssemblyName>BookStore</AssemblyName>
+    <RootNamespace>BookStoresDW</RootNamespace>
+    <AssemblyName>BookStoresDW</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -56,40 +56,21 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="Stored Procedures" />
-    <Folder Include="Tables" />
-    <Folder Include="Views" />
-    <Folder Include="Scripts" />
-    <Folder Include="DataWarehouse" />
-    <Folder Include="Staging" />
+    <Folder Include="Schema" />
+    <Folder Include="Schema\Security" />
+    <Folder Include="Schema\Security\schemas" />
+    <Folder Include="Schema\Tables" />
+    <Folder Include="Schema\Tables\staging" />
+    <Folder Include="Schema\Tables\dbo" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\address.sql" />
-    <Build Include="Tables\address_status.sql" />
-    <Build Include="Tables\author.sql" />
-    <Build Include="Tables\book.sql" />
-    <Build Include="Tables\book_author.sql" />
-    <Build Include="Tables\country.sql" />
-    <Build Include="Tables\cust_order.sql" />
-    <Build Include="Tables\customer.sql" />
-    <Build Include="Tables\customer_address.sql" />
-    <Build Include="Tables\order_history.sql" />
-    <Build Include="Tables\order_line.sql" />
-    <Build Include="Tables\order_status.sql" />
-    <Build Include="Tables\shipping_method.sql" />
-    <Build Include="Tables\book_language.sql" />
-    <Build Include="Tables\publisher.sql" />
-    <Build Include="Stored Procedures\GetAddressChangesByRowVersion.sql" />
-    <Build Include="Stored Procedures\GetBookChangesByRowVersion.sql" />
-    <Build Include="Stored Procedures\GetCustomerChangesByRowVersion.sql" />
-    <Build Include="Stored Procedures\GetDatabaseRowVersion.sql" />
-    <Build Include="Stored Procedures\GetShippingMethodChangesByRowVersion.sql" />
-    <Build Include="DataWarehouse\DimCustomer.sql" />
-    <Build Include="DataWarehouse\DimBook.sql" />
-    <Build Include="DataWarehouse\DimDate.sql" />
-    <Build Include="DataWarehouse\FactSales.sql" />
-    <Build Include="Staging\StgCustomer.sql" />
-    <Build Include="Staging\StgBook.sql" />
-    <Build Include="Staging\StgSales.sql" />
+    <Build Include="Schema\Security\schemas\staging.sql" />
+    <Build Include="Schema\Tables\dbo\DimBook.sql" />
+    <Build Include="Schema\Tables\dbo\DimCustomer.sql" />
+    <Build Include="Schema\Tables\dbo\DimDate.sql" />
+    <Build Include="Schema\Tables\dbo\FactSales.sql" />
+    <Build Include="Schema\Tables\staging\StgBook.sql" />
+    <Build Include="Schema\Tables\staging\StgCustomer.sql" />
+    <Build Include="Schema\Tables\staging\StgSales.sql" />
   </ItemGroup>
 </Project>

@@ -1,4 +1,4 @@
-﻿CREATE TABLE dbo.StgSales
+﻿CREATE TABLE staging.StgSales
 (
     OrderID INT,
     CustomerID INT,

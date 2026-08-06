@@ -1,4 +1,4 @@
-﻿CREATE TABLE dbo.StgCustomer
+﻿CREATE TABLE staging.StgCustomer
 (
     CustomerID INT,
     FirstName VARCHAR(200),
