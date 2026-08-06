@@ -6,7 +6,7 @@
     <Name>BookStore</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{a0b610ec-94ed-4cbd-8156-f9bf4b79a5fa}</ProjectGuid>
+    <ProjectGuid>{94ca4146-5ab1-4273-b7a6-4a5b6a3f7dc7}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql170DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
@@ -56,42 +56,26 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Stored Procedures" />
     <Folder Include="Tables" />
-    <Folder Include="schema" />
+    <Folder Include="Views" />
     <Folder Include="Scripts" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\book.sql" />
-    <Build Include="Tables\book_language.sql" />
-    <Build Include="Tables\publisher.sql" />
-    <Build Include="Tables\author.sql" />
-    <Build Include="Tables\book_author.sql" />
-    <Build Include="Tables\order_line.sql" />
-    <Build Include="Tables\cust_order.sql" />
-    <Build Include="Tables\shipping_method.sql" />
-    <Build Include="Tables\order_status.sql" />
-    <Build Include="Tables\order_history.sql" />
-    <Build Include="Tables\customer.sql" />
-    <Build Include="Tables\country.sql" />
     <Build Include="Tables\address.sql" />
     <Build Include="Tables\address_status.sql" />
+    <Build Include="Tables\author.sql" />
+    <Build Include="Tables\book.sql" />
+    <Build Include="Tables\book_author.sql" />
+    <Build Include="Tables\country.sql" />
+    <Build Include="Tables\cust_order.sql" />
+    <Build Include="Tables\customer.sql" />
     <Build Include="Tables\customer_address.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Scripts\address.data.sql" />
-    <None Include="Scripts\address_status.data.sql" />
-    <None Include="Scripts\author.data.sql" />
-    <None Include="Scripts\book.data.sql" />
-    <None Include="Scripts\book_author.data.sql" />
-    <None Include="Scripts\book_language.data.sql" />
-    <None Include="Scripts\country.data.sql" />
-    <None Include="Scripts\cust_order.data.sql" />
-    <None Include="Scripts\customer.data.sql" />
-    <None Include="Scripts\customer_address.data.sql" />
-    <None Include="Scripts\order_history.data.sql" />
-    <None Include="Scripts\order_line.data.sql" />
-    <None Include="Scripts\order_status.data.sql" />
-    <None Include="Scripts\publisher.data.sql" />
-    <None Include="Scripts\shipping_method.data.sql" />
+    <Build Include="Tables\order_history.sql" />
+    <Build Include="Tables\order_line.sql" />
+    <Build Include="Tables\order_status.sql" />
+    <Build Include="Tables\shipping_method.sql" />
+    <Build Include="Tables\book_language.sql" />
+    <Build Include="Tables\publisher.sql" />
   </ItemGroup>
 </Project>
