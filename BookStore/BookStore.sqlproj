@@ -60,6 +60,8 @@
     <Folder Include="Tables" />
     <Folder Include="Views" />
     <Folder Include="Scripts" />
+    <Folder Include="DataWarehouse" />
+    <Folder Include="Staging" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\address.sql" />
@@ -82,5 +84,12 @@
     <Build Include="Stored Procedures\GetCustomerChangesByRowVersion.sql" />
     <Build Include="Stored Procedures\GetDatabaseRowVersion.sql" />
     <Build Include="Stored Procedures\GetShippingMethodChangesByRowVersion.sql" />
+    <Build Include="DataWarehouse\DimCustomer.sql" />
+    <Build Include="DataWarehouse\DimBook.sql" />
+    <Build Include="DataWarehouse\DimDate.sql" />
+    <Build Include="DataWarehouse\FactSales.sql" />
+    <Build Include="Staging\StgCustomer.sql" />
+    <Build Include="Staging\StgBook.sql" />
+    <Build Include="Staging\StgSales.sql" />
   </ItemGroup>
 </Project>
