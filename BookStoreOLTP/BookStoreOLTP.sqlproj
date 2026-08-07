@@ -86,8 +86,8 @@
     <Build Include="Schema\Tables\shipping_method.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Scripts\address.data.sql" />
     <None Include="Scripts\address_status.data.sql" />
+    <None Include="Scripts\address.data.sql" />
     <None Include="Scripts\author.data.sql" />
     <None Include="Scripts\book.data.sql" />
     <None Include="Scripts\book_author.data.sql" />
@@ -101,5 +101,8 @@
     <None Include="Scripts\order_status.data.sql" />
     <None Include="Scripts\publisher.data.sql" />
     <None Include="Scripts\shipping_method.data.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>

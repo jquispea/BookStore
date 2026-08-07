@@ -1,13 +1,24 @@
-﻿CREATE TABLE staging.StgBook
+﻿CREATE TABLE [staging].[StgBook]
 (
-    BookID INT,
-    Title VARCHAR(400),
-    ISBN13 VARCHAR(13),
-    LanguageName VARCHAR(50),
-    PublisherName VARCHAR(400),
-    AuthorName VARCHAR(400),
-    NumPages INT,
-    PublicationDate DATE,
-    LoadDate DATETIME DEFAULT GETDATE()
+    [book_id] INT NOT NULL,
+
+    [title] VARCHAR(400) NULL,
+
+    [isbn13] VARCHAR(20) NULL,
+
+    [language_code] VARCHAR(10) NULL,
+
+    [language_name] VARCHAR(100) NULL,
+
+    [publisher_name] VARCHAR(200) NULL,
+
+    [author_name] VARCHAR(200) NULL,
+
+    [num_pages] INT NULL,
+
+    [publication_date] DATE NULL,
+
+    CONSTRAINT [PK_StgBook]
+        PRIMARY KEY CLUSTERED ([book_id] ASC)
 );
 GO

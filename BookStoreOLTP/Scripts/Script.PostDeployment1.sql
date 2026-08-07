@@ -9,23 +9,22 @@ Post-Deployment Script Template
                SELECT * FROM [$(TableName)]					
 --------------------------------------------------------------------------------------
 */
-PRINT 'Populating Customer table';
-SET NOCOUNT ON;
+:r .\country.data.sql
+:r .\address_status.data.sql
+:r .\order_status.data.sql
+:r .\shipping_method.data.sql
 
-IF NOT EXISTS (SELECT 1 FROM dbo.customer)
-BEGIN
-    INSERT INTO dbo.customer
-    (
-        customer_id,
-        first_name,
-        last_name,
-        email
-    )
-    VALUES
-        (1, 'Roberto', 'Suarez', 'roberto.suarez@email.com'),
-        (2, 'Andrea', 'Arana', 'andrea.arana@email.com'),
-        (3, 'Maria', 'Lopez', 'maria.lopez@email.com'),
-        (4, 'Juan', 'Perez', 'juan.perez@email.com'),
-        (5, 'Carla', 'Rojas', 'carla.rojas@email.com');
-END
-GO
+:r .\publisher.data.sql
+:r .\book_language.data.sql
+:r .\author.data.sql
+:r .\book.data.sql
+:r .\book_author.data.sql
+
+:r .\address.data.sql
+
+:r .\customer.data.sql
+:r .\customer_address.data.sql
+
+:r .\cust_order.data.sql
+:r .\order_line.data.sql
+:r .\order_history.data.sql
