@@ -84,6 +84,7 @@
     <Build Include="Schema\Tables\order_status.sql" />
     <Build Include="Schema\Tables\publisher.sql" />
     <Build Include="Schema\Tables\shipping_method.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\GetSalesChangesByRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\address_status.data.sql" />
