@@ -80,6 +80,7 @@
     <Build Include="Schema\Tables\dbo\PackageConfig.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\DW_MergeDimBook.sql" />
     <Build Include="Schema\Programmability\Stored Procedures\DW_LoadFactSales.sql" />
+    <Build Include="Schema\Programmability\Stored Procedures\DW_MergeDimCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\DimDate.data.sql" />

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="FactSales"
   DTS:PackageType="5"
-  DTS:VersionBuild="26"
-  DTS:VersionGUID="{4B0F4E53-1AA3-42E1-A85F-AF70FBD6C6A2}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{8B03828F-7CC4-47E6-A8D1-AB89113F7ECD}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAduHmsOJyMEyvJYUY/ksNAAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABFUAkkqR/gPht0t36/naCv3G3d0MtRrhv38JAcU5RQ8gAAAAAOgAAAAAIAACAAAAADKltgkyQtYvsUq7qd4BylswOIU3feRvO7/67xPPzHUyAAAADha0lurZmsA6AvYsoaOBuKzuSAKwa70Cz7ZxQ8O1KXo0AAAAC+Vyd3ls+sYtne+g5YbKSB3/nw2bhYZfu9s24J7ZI3Hf0bJ8nrpriBfJxPbOp4tUEqp2Lcoe5X1IdkJf63yXbv</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQrvyXWCibU2EXk9RXneiTgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAgYSp9ch7cAk7nC3lTSV+fq/OcWiYDzvCy81SJDpy4TwAAAAAOgAAAAAIAACAAAABAPvpXwp1juaaJCbJgktq/XcLNWzmj8bu1CjA4XkjlXSAAAADzWol13RXPxE7QlCXimFzMG80O+he7nT90U4Eludj2L0AAAABxLnHv5gbMd6lVvkcTDZmID0VyyrlfEuC7fNYOb3zW9LK9c0ka8hws8t92Y/52cBMrUfRSTKVzPtNITW7Gc6XW</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAduHmsOJyMEyvJYUY/ksNAAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABjlQMzsjjGSzMBCCGcycBRY0oEdbIRoF4xERAejwf5UwAAAAAOgAAAAAIAACAAAACYSu212MJdbGP1kiqeQQNuTqirmvpsmrM5HQJUMRfVYiAAAADWfEsxVSnchDyb2S8seI47aCDFaWm2eeGB73WM8RQ1PEAAAADlsGc0RT6BTayJZCnkV9OjAG1YBz6EA8uRTagFyKY4kuYGY2a6ZVuTSNvQ5vzYHZgcoiQM7vBF6VmdtqehdgiE</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAQrvyXWCibU2EXk9RXneiTgAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA9YPHaRbWIlA1Rfcw3CRP4A5OxZpvLDXPj8wKnq9q8QAAAAAAOgAAAAAIAACAAAADSUKE1fOOfRsoAWcvlvSBEphFyQmykDpcTBi6BayZ5KCAAAAD4lOmgABDR2XTU2gQaZf482D13L3036KGeC/nm9vOYsUAAAABgSOJ3R6ZNkJQR/tVuHNuZWrHCkH65n3hSUTw8nV2JXLvgyAczmic8Eqc76FDYABG7ofoOaxNapsiC1O5/Bmp7</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -618,39 +618,39 @@
       DTS:To="Package\Update LastRowVersion" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
-<!--Esta sección CDATA contiene la información de diseño del paquete. Esta sección incluye información como, por ejemplo, las coordenadas (x,y), el ancho y el alto.-->
-<!--Si edita manualmente esta sección y comete un error, puede eliminarlo. -->
-<!--El paquete podrá cargarse normalmente, pero se perderá la información de diseño anterior y el diseñador reorganizará los elementos automáticamente en la superficie de diseño.-->
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
 <Objects
   Version="8">
-  <!--Cada uno de los nodos siguientes contiene propiedades que no afectan al comportamiento en tiempo de ejecución.-->
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
   <Package
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="204,42"
+          Size="204,41.6"
           Id="Package\Get Database Last Change"
           TopLeft="45.0000008195638,60.86666666064" />
         <NodeLayout
-          Size="203,42"
+          Size="203.2,41.6"
           Id="Package\Get Last Sales Change"
           TopLeft="295.666668214732,62.5999999819199" />
         <NodeLayout
-          Size="182,42"
+          Size="182.4,41.6"
           Id="Package\Initialize staging table"
           TopLeft="591.166652779613,60.6000006147225" />
         <NodeLayout
-          Size="134,42"
+          Size="134.4,41.6"
           Id="Package\Load Sales"
           TopLeft="610.499985384445,169.200000415842" />
         <NodeLayout
-          Size="160,42"
+          Size="160,41.6"
           Id="Package\Sync Sales Data"
           TopLeft="607.166652506424,272.333333574401" />
         <NodeLayout
-          Size="190,42"
+          Size="190.4,41.6"
           Id="Package\Update LastRowVersion"
           TopLeft="593.999986340603,370.40000010848" />
         <EdgeLayout
@@ -829,6 +829,14 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Load Sales\Get changes from sales">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Load Sales\Load StgSales">
     <Properties>
       <Property>
@@ -838,14 +846,6 @@
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Load Sales\Get changes from sales">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
