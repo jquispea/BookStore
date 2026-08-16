@@ -34,6 +34,7 @@
           <SSIS:Package SSIS:Name="FactSales.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="DimCustomer.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="InitialAll.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="DimShippingMethod.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers />
         <SSIS:DeploymentInfo>
